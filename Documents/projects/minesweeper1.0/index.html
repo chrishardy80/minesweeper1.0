@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Minesweeper</title>
+    <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./javascript/main.js"></script>
+  
+  </head>
+  <body>
+    <div id="maincontent">
+
+      <div id="mobile">
+
+        <header>Minesweeper</header>
+        <div class="displays">
+          <div class="timer">
+            <div class="display">
+              <span class="time">00:00:00</span>
+            </div>
+          </div>
+        
+          <div class="mobileinfo">
+
+            <div class="display">
+              <div id="flagsplaced">
+                <div>Flags placed:</div>
+                <div class="flags">0</div>
+              </div>
+
+              <div id="bombs">
+                <div>Bombs:</div>
+                <div class="bombs">25</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div oncontextmenu="return false;"id="board">
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+        <div class="row">
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+            <div class="cell"><i class="fas fa-flag"></i><i class="fas fa-bomb"></i></div>
+        </div>
+
+      </div>
+
+      <div id="controlpanel">
+
+        <header>Minesweeper</header>
+
+        <div class="timer">
+          <div class="display">
+            <div class="time">00:00:00</div>
+          </div>
+        </div>
+
+        <div class="info">
+
+          <div class="display">
+            <div id="flagsplaced">
+              <div>Flags placed:</div>
+              <div class="flags">0</div>
+            </div>
+
+            <div id="bombs">
+              <div>Bombs:</div>
+              <div class="bombs">25</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clickable">
+
+          <div class="buttons">
+
+            <div class="row one">
+
+              <div id="newgame" class="button control notpressed">
+                <div class="buttonshadow shadownotpressed">
+                  <span>New Game</span>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row two">
+
+              <div id="easy" class="button control notpressed">
+                <div class="buttonshadow shadownotpressed">
+                  <span>Easy</span>
+                </div>
+              </div>
+
+              <div id="medium" class="button control pressed">
+                <div class="buttonshadow shadowpressed">
+                  <span>Medium</span>
+                </div>
+              </div>
+
+              <div id="hard" class="button control notpressed">
+                <div class="buttonshadow shadownotpressed">
+                  <span>Hard</span>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div id="PlaceFlags" class="button control notpressed">
+          <div class="buttonshadow shadownotpressed">
+            <span>Place Flags</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
